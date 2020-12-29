@@ -42,7 +42,7 @@ contract Oracle {
             return (false , 0 , 0);
         }
         else {
-            return (true,data[key].date,data[key].data);
+            return (true,data[key].date,data[key].payload);
         }
 
     } 

@@ -10,7 +10,7 @@ contract Consumer {
     }
 
     // a function to fetch data from the oracle data 
-    function getData() public {
+    function getData() public view {
         bytes32 key= keccak256(abi.encodePacked('BTC/USD'));
 
         // fetch data from the oracle 
